@@ -14,7 +14,7 @@
 
     <p>
     <% if session[:login_uid] %>
-      ログイン中（<%= session[:login_uid] %>さん）
+      ログイン中（<%= current_user %>さん）
     <% else %>
       ログインしていません
     <% end %>
